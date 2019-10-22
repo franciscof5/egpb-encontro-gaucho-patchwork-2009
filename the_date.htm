@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta name="generator" content="MediaWiki 1.14.0rc1">
+		<meta name="keywords" content="Template Tags/the date,Formatting Date and Time,Function Reference/is new day,Template Tags,Template Tags/How to Pass Tag Parameters,Template Tags/get calendar,Template Tags/get the time,Template Tags/single month title,Template Tags/the date xml,Template Tags/the modified date,Template Tags/the modified time">
+		<link rel="shortcut icon" href="http://codex.wordpress.org/favicon.ico">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://codex.wordpress.org/opensearch_desc.php" title="Codex (en)">
+		<link rel="alternate" type="application/rss+xml" title="Codex RSS Feed" href="http://codex.wordpress.org/index.php?title=Special:RecentChanges&amp;feed=rss">
+		<link rel="alternate" type="application/atom+xml" title="Codex Atom Feed" href="http://codex.wordpress.org/index.php?title=Special:RecentChanges&amp;feed=atom">
+<title>Template Tags/the date « WordPress Codex</title>
+<style type="text/css">
+@import url("http://s.wordpress.org/style/codex-wp4.css");
+@import url("http://s.wordpress.org/style/wp4.css");
+</style>
+<link media="only screen and (max-device-width: 480px)" href="the_date_arquivos/iphone.css" type="text/css" rel="stylesheet">
+<!--[if IE]>
+<style type="text/css">
+@import url("http://wordpress.org/style/ie.css?9");
+</style>
+<![endif]-->
+<link rel="shortcut icon" href="http://s.wordpress.org/favicon.ico" type="image/x-icon">
+
+<script src="the_date_arquivos/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+_uacct = "UA-52447-1";
+urchinTracker();
+</script>
+
+<!--[if IE]>
+    <script type="text/javascript" src="/skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" />
+<![endif]-->
+
+<script type="text/javascript" src="the_date_arquivos/index.php"></script>
+<script type="text/javascript">wgBreakFrames=false;wgContentLanguage='en';</script>
+<script type="text/javascript" src="the_date_arquivos/wikibits.js"></script>
+
+</head><body id="wordpress-org">
+
+<div id="header">
+	<div class="wrapper">
+		<h1><a href="http://wordpress.org/" title="WordPress">WordPress.org</a></h1>
+
+		<form action="http://wordpress.org/search/do-search.php" method="get" id="head-search">
+			<input class="text" name="search" value="Search the Codex" maxlength="150" onfocus="this.value=(this.value=='Search the Codex') ? '' : this.value;" onblur="this.value=(this.value=='') ? 'Search the Codex' : this.value;" type="text"> <input class="button" value="Go" type="submit">
+		</form>
+
+		<ul>
+			<li><a href="http://wordpress.org/" title="Home is where the heart is.">Home</a></li>
+			<li><a href="http://wordpress.org/showcase/" title="See some of the sites built on WordPress.">Showcase</a></li>
+			<li><a href="http://wordpress.org/extend/" title="Taking WordPress beyond your wildest imagination">Extend</a></li>
+			<li><a href="http://wordpress.org/about/" title="About the WordPress Organization, and where we're going.">About</a></li>
+			<li><a class="current" href="http://codex.wordpress.org/Main_Page" title="Documentation, tutorials, best practices.">Docs</a></li>
+			<li><a href="http://wordpress.org/development/" title="Come here for the latest scoop.">Blog</a></li>
+			<li><a href="http://wordpress.org/support/" title="Support and discussion forums.">Forums</a></li>
+			<li><a href="http://wordpress.org/hosting/" title="Find a home for your blog">Hosting</a></li>
+			<li id="download"><a href="http://wordpress.org/download/" title="Get it. Got it? Good.">Download</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="headline">
+	<div class="wrapper">
+		<h2>Codex</h2>
+		
+		<div class="portlet" id="p-personal">
+		  <p class="login">Codex tools:
+		     <a href="http://codex.wordpress.org/index.php?title=Special:UserLogin&amp;returnto=Template_Tags/the_date">Log in / create account</a> 		  </p>
+		</div>
+	</div>
+</div>
+
+<div id="pagebody">
+	<div class="wrapper">	
+		<div class="col-10" id="bodyContent">
+						<h2 class="pagetitle">Template Tags/the date</h2>
+									<!-- start content -->
+				<table id="toc" class="toc" summary="Contents"><tbody><tr><td><div id="toctitle"><h2>Contents</h2> <span class="toctoggle">[<a href="javascript:toggleToc()" class="internal" id="togglelink">hide</a>]</span></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Usage"><span class="tocnumber">2</span> <span class="toctext">Usage</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Default_Usage"><span class="tocnumber">3.1</span> <span class="toctext">Default Usage</span></a></li>
+<li class="toclevel-2"><a href="#Date_as_Year.2C_Month.2C_Date_in_Heading"><span class="tocnumber">3.2</span> <span class="toctext">Date as Year, Month, Date in Heading</span></a></li>
+<li class="toclevel-2"><a href="#Date_in_Heading_Using_.24my_date_Variable"><span class="tocnumber">3.3</span> <span class="toctext">Date in Heading Using $my_date Variable</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Parameters"><span class="tocnumber">4</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1"><a href="#Related"><span class="tocnumber">5</span> <span class="toctext">Related</span></a></li>
+</ul>
+</td></tr></tbody></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Description" id="Description"></a><h2> <span class="mw-headline"> Description </span></h2>
+<p>Displays or returns the date of a post, or a set of posts if published on the same day. 
+</p>
+<div style="border: 1px solid darkslateblue; margin: 10px 0px 5px; padding: 10px; text-decoration: none; background-color: rgb(240, 240, 240);"><b>SPECIAL NOTE:</b>
+When there are multiple posts on a page published under the SAME DAY,
+the_date() only displays the date for the first post (that is, the
+first instance of the_date()). To repeat the date for posts published
+under the same day, you should use the <a href="http://codex.wordpress.org/Template_Tags" title="Template Tags">Template Tag</a> <a href="http://codex.wordpress.org/Template_Tags/the_time" title="Template Tags/the time">the_time()</a> with a <a href="http://codex.wordpress.org/Formatting_Date_and_Time" title="Formatting Date and Time">date-specific format string</a>.</div>
+<p>This tag must be used within <a href="http://codex.wordpress.org/The_Loop" title="The Loop">The Loop</a>.
+</p>
+<a name="Usage" id="Usage"></a><h2> <span class="mw-headline"> Usage </span></h2>
+<p><code><span style="color: rgb(0, 0, 0);">
+&nbsp;<span style="color: rgb(0, 0, 187);">&lt;?php&nbsp;the_date</span><span style="color: rgb(0, 119, 0);">(</span><span style="color: rgb(221, 0, 0);">'format'</span><span style="color: rgb(0, 119, 0);">,&nbsp;</span><span style="color: rgb(221, 0, 0);">'before'</span><span style="color: rgb(0, 119, 0);">,&nbsp;</span><span style="color: rgb(221, 0, 0);">'after'</span><span style="color: rgb(0, 119, 0);">,&nbsp;echo);&nbsp;</span><span style="color: rgb(0, 0, 187);">?&gt;</span>&nbsp;</span>
+</code>
+</p>
+<a name="Examples" id="Examples"></a><h2> <span class="mw-headline"> Examples </span></h2>
+<a name="Default_Usage" id="Default_Usage"></a><h3> <span class="mw-headline"> Default Usage </span></h3>
+<p>Displays the date using defaults.
+</p>
+<pre>&lt;p&gt;Date posted: &lt;?php the_date();&nbsp;?&gt;&lt;/p&gt;
+</pre>
+<a name="Date_as_Year.2C_Month.2C_Date_in_Heading" id="Date_as_Year.2C_Month.2C_Date_in_Heading"></a><h3> <span class="mw-headline"> Date as Year, Month, Date in Heading </span></h3>
+<p>Displays the date using the <code>'2007-07-23'</code> format (ex: 2004-11-30), inside an &lt;h2&gt; tag.
+</p>
+<pre>&lt;?php the_date('Y-m-d', '&lt;h2&gt;', '&lt;/h2&gt;');&nbsp;?&gt;
+</pre>
+<a name="Date_in_Heading_Using_.24my_date_Variable" id="Date_in_Heading_Using_.24my_date_Variable"></a><h3> <span class="mw-headline"> Date in Heading Using $my_date Variable</span></h3>
+<p>Returns the date in the default format inside an &lt;h2&gt; tag and
+assigns it to the $my_date variable. The variable's value is then
+displayed with the PHP echo command.
+</p>
+<pre>&lt;?php $my_date = the_date('', '', '', FALSE); echo $my_date;&nbsp;?&gt;
+</pre>
+<a name="Parameters" id="Parameters"></a><h2> <span class="mw-headline"> Parameters </span></h2>
+<dl><dt> format&nbsp;</dt><dd> (<i>string</i>) The format for the date. Defaults to the date format configured in your WordPress options. See <a href="http://codex.wordpress.org/Formatting_Date_and_Time" title="Formatting Date and Time">Formatting Date and Time</a>.
+</dd><dt> before&nbsp;</dt><dd> (<i>string</i>) Text to place before the date. There is no default.
+</dd><dt> after&nbsp;</dt><dd> (<i>string</i>) Text to place after the date. There is no default.
+</dd><dt> echo&nbsp;</dt><dd> (<i>boolean</i>) Display the date (<tt>TRUE</tt>), or return the date to be used in PHP (<tt>FALSE</tt>). Defaults to <tt>TRUE</tt>.
+</dd></dl>
+<a name="Related" id="Related"></a><h2> <span class="mw-headline"> Related </span></h2>
+<p><a href="http://codex.wordpress.org/Template_Tags/the_date_xml" title="Template Tags/the date xml"> the_date_xml</a>,
+<strong class="selflink"> the_date</strong>,
+<a href="http://codex.wordpress.org/Template_Tags/the_time" title="Template Tags/the time"> the_time</a>,
+<a href="http://codex.wordpress.org/Template_Tags/the_modified_date" title="Template Tags/the modified date"> the_modified_date</a>,
+<a href="http://codex.wordpress.org/Template_Tags/the_modified_time" title="Template Tags/the modified time"> the_modified_time</a>,
+<a href="http://codex.wordpress.org/Template_Tags/get_the_time" title="Template Tags/get the time"> get_the_time</a>,
+<a href="http://codex.wordpress.org/Template_Tags/single_month_title" title="Template Tags/single month title"> single_month_title</a>,
+<a href="http://codex.wordpress.org/Template_Tags/get_calendar" title="Template Tags/get calendar"> get_calendar</a>,
+<s><a href="http://codex.wordpress.org/Template_Tags/the_weekday" title="Template Tags/the weekday"> the_weekday</a></s>,
+<s><a href="http://codex.wordpress.org/Template_Tags/the_weekday_date" title="Template Tags/the weekday date"> the_weekday_date</a></s>
+</p>
+<ul><li> Affects the return value of the <a href="http://codex.wordpress.org/Function_Reference/is_new_day" title="Function Reference/is new day">is_new_day()</a> function.
+</li></ul>
+<div style="border: 1px solid rgb(0, 0, 0); padding: 10px; background: rgb(247, 247, 247) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+<p><a href="http://codex.wordpress.org/Template_Tags/How_to_Pass_Tag_Parameters#Tags_with_PHP_function-style_parameters" title="Template Tags/How to Pass Tag Parameters"> How to pass parameters to tags with PHP function-style parameters</a>
+</p>
+<a href="http://codex.wordpress.org/Template_Tags" title="Template Tags"> Go to Template Tag index</a></div>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 32/1000000
+Post-expand include size: 838/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<div class="printfooter">
+Retrieved from "<a href="http://codex.wordpress.org/Template_Tags/the_date">http://codex.wordpress.org/Template_Tags/the_date</a>"</div>
+				<div id="catlinks"><div id="catlinks" class="catlinks"><div id="mw-normal-catlinks"><a href="http://codex.wordpress.org/Special:Categories" title="Special:Categories">Category</a>: <span dir="ltr"><a href="http://codex.wordpress.org/Category:Template_Tags" title="Category:Template Tags">Template Tags</a></span></div></div></div>			<!-- end content -->
+		</div>
+		<div class="col-2">
+			
+						
+			<ul class="submenu">
+				<li id="n-mainpage"><a href="http://codex.wordpress.org/Main_Page">Home Page</a></li>	
+				<li><a href="http://codex.wordpress.org/WordPress_Lessons">WordPress Lessons</a></li>
+				<li><a href="http://codex.wordpress.org/Getting_Started_with_WordPress">Getting Started</a></li>
+				<li><a href="http://codex.wordpress.org/Working_with_WordPress">Working with WordPress</a></li>
+				<li><a href="http://codex.wordpress.org/Blog_Design_and_Layout">Design and Layout</a></li>
+				<li><a href="http://codex.wordpress.org/Advanced_Topics">Advanced Topics</a></li>
+				<li><a href="http://codex.wordpress.org/Troubleshooting">Troubleshooting</a></li>
+				<li><a href="http://codex.wordpress.org/Developer_Documentation">Developer Docs</a></li>
+				<li><a href="http://codex.wordpress.org/About_WordPress">About WordPress</a></li>
+			</ul>
+
+			<h3>Codex Resources</h3>
+			<ul class="submenu">
+				<li id="n-portal"><a href="http://codex.wordpress.org/Codex:Community_Portal">Community portal</a></li>	      
+				<li id="n-currentevents"><a href="http://codex.wordpress.org/Current_events">Current events</a></li>	      
+				<li id="n-recentchanges"><a href="http://codex.wordpress.org/Special:Recentchanges">Recent changes</a></li>	      
+				<li id="n-randompage"><a href="http://codex.wordpress.org/Special:Randompage">Random page</a></li>	      
+				<li id="n-help"><a href="http://codex.wordpress.org/Help:Contents">Help</a></li>	
+			</ul>
+			
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+	<div class="wrapper">
+		<p>
+			<a href="http://wordpress.org/report-bugs/">Report a Site Bug</a> | 
+			<a href="http://wordpress.org/about/privacy/">Privacy</a> | 
+			<a href="http://wordpress.org/about/gpl/">GPL</a> | 
+			<a href="http://browsehappy.com/">Browse Happy</a> | 
+			<a href="http://wordpress.org/development/feed/" class="rsslink">WordPress Updates RSS</a>
+		</p>
+		<h6>Code is Poetry</h6>
+	</div>
+</div>
+
+
+<!--
+user:
+
+NULL
+-->
+</body></html>

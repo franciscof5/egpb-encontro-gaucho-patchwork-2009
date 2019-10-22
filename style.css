@@ -1,0 +1,114 @@
+/*
+Theme Name: EGPB
+Theme URI: http://www.encontrogauchodepatchwork.com/
+Description: Tema desenvolvido para o Encontro Gaucho de Patchwork e Bonecos
+Version: 0.1 (WP2.7.1)
+Author: Francisco Matelli
+Author URI: http://franciscomatelli.com
+Tags: egpb
+*/
+
+
+
+@charset "utf-8";
+.stilos.css {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+.h1 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #FF3300;
+}
+.texto {
+	font-family: Trebuchet MS;
+	font-size: 12px;
+	color: #333333;
+}
+body {
+
+	background-image: url();
+
+	background-color: #CCCCFF;
+
+}
+
+.style2 {
+
+	font-size: 9px;
+
+	color: #FFFFFF;
+
+}
+
+.style4 {
+	font-family: Trebuchet MS;
+	font-size: 12px;
+	color: #9B4DFB;
+	padding: 0 40px 0 40px;
+}
+
+
+h1.style4 {
+	font-family: Trebuchet MS;
+	color: #9B4DFB;
+	padding: 0 40px 0 40px;
+	font-size: 30px;
+}
+
+.style5 {
+	font-family: Trebuchet MS;
+	color: #CC0000;
+	padding: 0 40px 0 40px;
+	font-size: 18px
+}
+
+.style6, .style3 {
+	font-family: Trebuchet MS;
+	font-size: 11px;
+	color: #333333;
+}
+.style7 {
+	color: #9B4DFB;
+	font-weight: bold;
+}
+.style8 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style11 {color: #9B4DFB}
+.selectbox {
+	font-family: "Trebuchet MS", Arial, Verdana, sans-serif;
+	font-size: 10pt;
+	width: 140px;
+	border: 1px solid #9B4DFB;
+	background-color:#FFFFFF;
+}
+
+
+.campos {
+	border: 1px solid #9B4DFB;
+	background-color:#FFFFFF;
+}
+
+.data {
+	background-color:#f3f3f3;
+	padding:5px;
+}
+.style12 {color: #999999}
+.style14 {color: #9B4DFB; font-weight: bold; font-size: 14px; }
+.style16 {color: #FF0000; font-weight: bold; font-size: 14px; }
+.style17 {color: #FF0000}
+/*CONTATO*/
+.h1 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #FF3300;
+}
+.texto {
+	font-family: Trebuchet MS;
+	font-size: 12px;
+	color: #333333;
+}
+
